@@ -10,6 +10,8 @@
   --clr-secondary: hsla(169, 100%, 56%);
   --clr-accent: hsl(240, 100%, 98%);
   --clr-accent-90: hsl(240, 2%, 38%);
+  --clr-accent-92:hsl(291, 51%, 92%);
+  --clr-accent-52:hsl(290, 83%, 51%);
   --clr-gradient: linear-gradient(
     -90deg,
     var(--clr-primary),
@@ -23,8 +25,23 @@
   --fw-title: 400;
   --fw-number: 800;
 }
+body{
+  line-height: 1.6;
+  font-size: 16px;
+}
 .container {
   background-color: var(--clr-primary);
+  padding: 2em 0;
+  .container-title{
+    color: var(--clr-accent);
+    font-size: 4rem;
+    font-family: var(--ff-title);
+    text-transform: uppercase;
+    width: 80%;
+    margin: 0 auto;
+    text-shadow: -3px -3px 0 var(--clr-accent-52),-6px -6px 0 var(--clr-accent);
+    letter-spacing: 5px;
+  }
 }
 .container-wrapper,
 .children-wrapper {
@@ -57,12 +74,17 @@
 }
 .set {
   background-color: var(--clr-primary);
-  color: hsl(169, 100%, 90%);
   min-width: 320px;
   flex-grow: 1;
 }
+.container-wrapper .set{
+     color: hsl(169, 100%, 90%);
+}
+.children-wrapper .set{
+     color: var(--clr-accent-92);
+}
 .setTitle {
-  padding: 3em 0 1em;
+  padding: 1em 0 1em;
   font-family: var(--ff-subtile);
   font-weight: var(--fw-bold);
 }
@@ -99,11 +121,17 @@
   border: 1px solid hsl(105, 42%, 10%);
   gap: 0.2em;
 }
+.children-wrapper .items{
+    border: 1px solid hsl(291, 41%, 10%);
+}
 
 .item {
   background-color: var(--clr-secondary);
   width: 3px;
   display: block;
+}
+.children-wrapper .item{
+    background-color: var(--clr-accent-52);
 }
 .items--display-flex {
   display: flex;
@@ -141,11 +169,9 @@
 }
 .items--space-around {
   justify-content: space-around;
-  border: 1px solid hsl(105, 42%, 90%);
 }
 .items--space-evenly {
   justify-content: space-evenly;
-  border: 1px solid hsl(105, 42%, 90%);
 }
 .items--flex-wrap {
   flex-wrap: nowrap;
@@ -198,4 +224,35 @@
 }
 .items--flex-basis .item:nth-child(2) {
   flex-basis: 40%;
+}
+
+/* flex-shrink */
+.items--flex-shrink .item{
+     flex-basis:100%;
+}
+.items--flex-shrink .item:nth-child(2){
+    flex-shrink: 2;
+}
+
+/* align-self */
+.items--align-self .item:nth-child(3){
+        align-self: flex-end;
+}
+
+/* footer */
+footer{
+  background-color: var(--clr-primary);
+  padding: 2em 0;
+  p{
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--clr-primary);
+    font-family: var(--ff-body);
+    color: var(--clr-accent-90);
+
+    a{
+      color: var(--clr-accent-90);
+    }
+  }
+
 }

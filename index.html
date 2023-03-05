@@ -5,9 +5,479 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carme&family=Heebo:wght@200;300;400;500;600&family=Rajdhani:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>template</h1>
+    <div class="container">
+      <h1 class="container-title">flex</h1>
+      <!-- parent -->
+      <div class="container-wrapper">
+        <h1>container</h1>
+        <div class="flex-container">
+          <!-- display -->
+          <section class="set">
+            <h2 class="setTitle">display</h2>
+            <p class="setPara">Enables flex for all children.</p>
+            <div class="set-items">
+              <div class="items-container display-flex">
+                <div class="items items--display-flex">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>display : flex</h2>
+              </div>
+
+              <div class="items-container display-inline-flex">
+                <div class="items items--display-inline-flex">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>display : inline-flex</h2>
+              </div>
+            </div>
+          </section>
+
+          <!-- flex-direction -->
+          <section class="set">
+            <h2 class="setTitle">flex-direction</h2>
+            <p class="setPara">Establishes the main axis.</p>
+            <div class="set-items">
+              <div class="items-container flex-direction-row">
+                <div class="items items--flex-direction-row">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>flex-direction : row</h2>
+              </div>
+
+              <div class="items-container flex-direction-row-reverse">
+                <div class="items items--flex-direction-row-reverse">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>flex-direction : row-reverse</h2>
+              </div>
+
+              <div class="items-container flex-direction-column">
+                <div class="items items--flex-direction-column">
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                </div>
+                <h2>flex-direction : column</h2>
+              </div>
+
+              <div class="items-container flex-direction-column-reverse">
+                <div class="items items--flex-direction-column-reverse">
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                  <div class="item item-test"></div>
+                </div>
+                <h2>flex-direction : column-reverse</h2>
+              </div>
+            </div>
+          </section>
+
+          <!--flex-wrap-->
+          <section class="set">
+            <h2 class="setTitle">flex-wrap</h2>
+            <p class="setPara">
+              Wraps items if they can't all be made to fit on one line.
+            </p>
+            <div class="set-items">
+              <div class="items-container flex-wrap-nowrap">
+                <div class="items items--flex-wrap">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>flex-wrap : nowrap</h2>
+              </div>
+              <div class="items-container flex-wrap-wrap">
+                <div class="items flex-wrap-wrap">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>flex-wrap : wrap</h2>
+              </div>
+              <div class="items-container flex-wrap-wrap-reverse">
+                <div class="items flex-wrap-wrap-reverse">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>flex-wrap : wrap-reverse</h2>
+              </div>
+            </div>
+          </section>
+
+          <!--justify-content-->
+          <section class="set">
+            <h2 class="setTitle">justify-content</h2>
+            <p class="setPara">
+              Attempts to distribute extra space on the main axis.
+            </p>
+            <div class="set-items">
+              <div class="items-container justify-content-flex-start">
+                <div class="items items--flex-start">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>justify content : flex-end</h2>
+              </div>
+              <div class="items-container justify-content-flex-end">
+                <div class="items items--flex-end">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>justify content : flex-end</h2>
+              </div>
+              <div class="items-container justify-content-center">
+                <div class="items items--center">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>justify content : flex-end</h2>
+              </div>
+              <div class="items-container justify-content-space-between">
+                <div class="items items--space-between">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>justify content : space between</h2>
+              </div>
+
+              <div class="items-container justify-content-space-around">
+                <div class="items items--space-around">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>justify-content : space around</h2>
+              </div>
+
+              <div class="items-container justify-content-space-evenly">
+                <div class="items items--space-evenly">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>justify-content : space evenly</h2>
+              </div>
+            </div>
+          </section>
+
+          <!--align-item-->
+          <section class="set">
+            <h2 class="setTitle">align-items</h2>
+            <p class="setPara">
+              Determines how items are laid out on the cross axis.
+            </p>
+            <div class="set-items">
+              <div class="items-container align-item-flex-start">
+                <div class="items items--align-item-flex-start">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : flex-start</h2>
+              </div>
+              <div class="items-container align-item-flex-end">
+                <div class="items items--align-item-flex-end">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : flex-end</h2>
+              </div>
+              <div class="items-container align-item-center">
+                <div class="items items--align-item-center">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : center</h2>
+              </div>
+              <div class="items-container align-item-baseline">
+                <div class="items items--align-item-baseline">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : baseline</h2>
+              </div>
+
+              <div class="items-container align-item-stretch">
+                <div class="items items--align-item-stretch">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>align-item : stretch</h2>
+              </div>
+            </div>
+          </section>
+
+          <!--align-content-->
+          <section class="set">
+            <h2 class="setTitle">align-content</h2>
+            <p class="setPara">
+              Only has an effect with more than one line of content. Examples
+              shown here use flex-wrap.
+            </p>
+            <div class="set-items">
+              <div class="items-container align-item-flex-start">
+                <div class="items items--align-item-flex-start">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : flex-start</h2>
+              </div>
+              <div class="items-container align-item-flex-end">
+                <div class="items items--align-item-flex-end">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : flex-end</h2>
+              </div>
+              <div class="items-container align-item-center">
+                <div class="items items--align-item-center">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : center</h2>
+              </div>
+              <div class="items-container align-item-baseline">
+                <div class="items items--align-item-baseline">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : baseline</h2>
+              </div>
+
+              <div class="items-container align-item-stretch">
+                <div class="items items--align-item-stretch">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>align-item : stretch</h2>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- children -->
+      <div class="children-wrapper">
+        <h1>children</h1>
+        <div class="flex-container">
+          <!-- order -->
+          <section class="set">
+            <h2 class="setTitle">order</h2>
+            <p class="setPara">
+              Allows you to explictly set the order you want each child to
+              appear in.
+            </p>
+            <div class="set-items">
+              <div class="items-container order">
+                <div class="items items--order">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h3 class="item-title">order : integer</h3>
+              </div>
+
+              <div class="items-container display-inline-flex">
+                <div class="items items--display-inline-flex">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>display : inline-flex</h2>
+              </div>
+            </div>
+          </section>
+
+          <!-- flex-grow -->
+          <section class="set">
+            <h2 class="setTitle">flex-grow</h2>
+            <p class="setPara">
+              Allows you to determine how each child is allowed to grow as a
+              part of a whole.
+            </p>
+            <div class="set-items">
+              <div class="items-container flex-grow">
+                <div class="items items--flex-grow-1">
+                  <div class="item item--flex-grow-1"></div>
+                  <div class="item item--flex-grow-1"></div>
+                  <div class="item item--flex-grow-1"></div>
+                </div>
+                <h3 class="item-title">flex-grow : 1 ( applied to all )</h3>
+              </div>
+
+              <div class="items-container flex-grow-1-2-3">
+                <div class="items items--flex-grow-1-2-3">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2 class="item-title">flex-grow : (1, 2, and 3)</h2>
+              </div>
+            </div>
+          </section>
+
+          <!--flex-basis-->
+          <section class="set">
+            <h2 class="setTitle">flex-basis</h2>
+            <p class="setPara">
+              Defines the size of an element before remaining space is
+              distributed.
+            </p>
+            <div class="set-items">
+              <div class="items-container flex-basis">
+                <div class="items items--flex-basis">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>first item 20%, second item 40%</h2>
+              </div>
+            </div>
+          </section>
+
+          <!--flex-shrink-->
+          <section class="set">
+            <h2 class="setTitle">flex-shrink</h2>
+            <p class="setPara">
+              Allows an item to shrink if necessary. Only really useful with a
+              set size or flex-basis.
+            </p>
+            <div class="set-items">
+              <div class="items-container flex-shrink">
+                <div class="items items--flex-shrink">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h2>both want to be 100% wide, 2nd item has flex-shrink:2</h2>
+              </div>
+            </div>
+          </section>
+
+          <!--align-self-->
+          <section class="set">
+            <h2 class="setTitle">align-self</h2>
+            <p class="setPara">
+              Sets alignment for individual item. See "align-items" for options
+            </p>
+            <div class="set-items">
+              <div class="items-container align-self">
+                <div class="items items--align-self">
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                  <div class="item align-item"></div>
+                </div>
+                <h2>align-item : flex-start</h2>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        FLEX was created by <a href="">alinessa it solution</a>. an interactive
+        design + development shop.
+      </p>
+      <p>Want more like this? Check out <a href="">GRID</a></p>
+    </footer>
   </body>
 </html>
