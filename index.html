@@ -14,12 +14,149 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <footer>
-      <p>
-        FLEX was created by <a href="">alinessa it solution</a>. an interactive
-        design + development shop.
-      </p>
-      <p>Want more like this? Check out <a href="">GRID</a></p>
-    </footer>
+    <div class="wrapper">
+      <header><h1>grid</h1></header>
+      <main>
+        <div class="container">
+          <section class="set">
+            <h2 class="setTitle">display</h2>
+            <p class="setPara">
+              Establishes a new grid formatting context for children.
+            </p>
+            <div class="set-items--container">
+              <div class="set-items display-grid">
+                <div class="items items--display-grid">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h3 class="item-heading">display : grid</h3>
+              </div>
+              <!-- display:inline-grid -->
+              <div class="set-items display--inline-grid">
+                <div class="items items--display--inline-grid">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h3 class="item-heading">display : inline-grid</h3>
+              </div>
+              <!-- display-subgrid -->
+              <div class="set-items display--subgrid">
+                <div class="items items--display--subgrid">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h3 class="item-heading">display : subgrid</h3>
+              </div>
+            </div>
+          </section>
+
+          <!-- grid-template -->
+          <section class="set">
+            <h2 class="setTitle">grid-template</h2>
+            <p class="setPara">Defines the rows and columns of the grid.</p>
+
+            <!-- grid-template-columns/grid-template-rows -->
+            <div class="set-items--container">
+              <div class="set-items grid-template-column-row">
+                <div class="items items--grid-template-column-row">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h3 class="item-heading">
+                  <p>grid-template-columns : 12px 12px 12px ;</p>
+                  <p>grid-template-rows : 12px 12px 12px</p>
+                </h3>
+              </div>
+              <!-- grid-template-column-row-repeat -->
+              <div class="set-items grid-template-column-row-repeat">
+                <div class="items items--grid-template-column-row-repeat">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h3 class="item-heading">
+                  <p>grid-template-columns: 12px 12px 12px;</p>
+                  <p>grid-template-rows: 12px 12px 12px;</p>
+                </h3>
+              </div>
+              <!-- grid-template-column-row-auto -->
+              <div class="set-items grid-template-column-row-auto">
+                <div class="items items--grid-template-column-row-auto">
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h3 class="item-heading">
+                  <p>grid-template-columns: 8px auto 8px;</p>
+                  <p>grid-template-rows: 8px auto 12px;</p>
+                </h3>
+              </div>
+
+              <!-- grid-template-column-row-auto-percentise -->
+              <div class="set-items grid-template-column-row-auto-percentise">
+                <div
+                  class="items items--grid-template-column-row-auto-percentise"
+                >
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                  <div class="item"></div>
+                </div>
+                <h3 class="item-heading">
+                  <p>grid-template-columns: 22% 22% auto;</p>
+                  <p>grid-template-rows: 22% auto 22%</p>
+                </h3>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p>
+          FLEX was created by <a href="">alinessa it solution</a>. an
+          interactive design + development shop.
+        </p>
+        <p>Want more like this? Check out <a href="">GRID</a></p>
+      </footer>
+    </div>
   </body>
 </html>
