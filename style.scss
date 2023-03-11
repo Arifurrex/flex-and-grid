@@ -86,11 +86,14 @@ main{
       .setTitle{
         font-family: var(--ff-subtile);
         text-transform: capitalize;
+        font-size: var(--ff-subtile);
       }
       .setPara{
         margin-bottom: 1em;
         font-family: var(--ff-body);
         color:var(--clr-accent-90);
+        font-size: var(--fs-400);
+        font-size: clamp(.75rem,calc(1rem + 1.3vw),var(--fs-400));
       }
       .set-items--container{
         display: grid;
@@ -498,7 +501,6 @@ footer{
   grid-area: footer;
   background-color: var(--clr-primary);
   padding: 2em 0;
-  border: 1px solid red;
   p{
     width: 80%;
     margin: 0 auto;
